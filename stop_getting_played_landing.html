@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Signs She's Playing You - Stop Getting Played Blueprint</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            padding: 80px 0;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hook {
+            font-size: 1.4rem;
+            color: #ef4444;
+            margin-bottom: 25px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .main-title {
+            font-size: 4.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 50%, #ef4444 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            line-height: 1.1;
+            position: relative;
+            z-index: 2;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #e2e8f0;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .urgency-banner {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3);
+            animation: pulse-glow 2s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3); }
+            50% { box-shadow: 0 15px 35px rgba(239, 68, 68, 0.5); }
+        }
+
+        /* Signs Section */
+        .signs-section {
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 60px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .signs-grid {
+            display: grid;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .sign-card {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(51, 65, 85, 0.7) 100%);
+            padding: 45px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(20px);
+            border-left: 5px solid #ef4444;
+        }
+
+        .sign-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(239, 68, 68, 0.2);
+            border-color: rgba(239, 68, 68, 0.4);
+        }
+
+        .sign-number {
+            position: absolute;
+            top: -20px;
+            left: 45px;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.8rem;
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
+        }
+
+        .sign-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            padding-top: 25px;
+        }
+
+        .sign-description {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .sign-examples {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .sign-examples h4 {
+            color: #ef4444;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .sign-examples p {
+            color: #e2e8f0;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        /* Reality Check Section */
+        .reality-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .reality-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .reality-subtext {
+            font-size: 1.6rem;
+            color: #ef4444;
+            font-weight: 600;
+            margin-bottom: 60px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cta-subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .value-prop {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .value-prop h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .value-prop p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        .price-section {
+            margin: 50px 0;
+        }
+
+        .original-price {
+            font-size: 1.8rem;
+            text-decoration: line-through;
+            color: rgba(255, 255, 255, 0.6);
+            margin-right: 20px;
+        }
+
+        .current-price {
+            font-size: 3rem;
+            color: #ffffff;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .price-note {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            color: #1e293b;
+            padding: 25px 60px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 3px solid transparent;
+            margin-bottom: 30px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            background: #1e293b;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .guarantee {
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .guarantee h4 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .guarantee p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        .testimonial-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .testimonial-text {
+            font-size: 1.4rem;
+            color: #ffffff;
+            font-style: italic;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .testimonial-author {
+            text-align: center;
+            color: #ef4444;
+            font-weight: 600;
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            opacity: 0.08;
+            pointer-events: none;
+            animation: float 12s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+
+        .floating-1 {
+            top: 15%;
+            left: 8%;
+            width: 60px;
+            height: 60px;
+            background: #ef4444;
+            border-radius: 50%;
+            animation-delay: 0s;
+        }
+
+        .floating-2 {
+            top: 70%;
+            right: 10%;
+            width: 40px;
+            height: 40px;
+            background: #ffffff;
+            border-radius: 50%;
+            animation-delay: 4s;
+        }
+
+        .floating-3 {
+            bottom: 20%;
+            left: 15%;
+            width: 50px;
+            height: 50px;
+            background: #ef4444;
+            transform: rotate(45deg);
+            animation-delay: 8s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .sign-card {
+                padding: 30px 25px;
+            }
+            
+            .sign-title {
+                font-size: 1.6rem;
+            }
+            
+            .cta-title {
+                font-size: 2.5rem;
+            }
+            
+            .cta-button {
+                padding: 20px 40px;
+                font-size: 1.3rem;
+            }
+            
+            .value-props {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scroll Effects */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Elements -->
+    <div class="floating-element floating-1"></div>
+    <div class="floating-element floating-2"></div>
+    <div class="floating-element floating-3"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="hook">"If she wanted to, she would. Stop making excuses for her behavior."</div>
+            <h1 class="main-title">5 Signs She's<br>Playing You</h1>
+            <p class="subtitle">Learn the warning signs that protect your time, energy, and self-respect from women who see you as an option, not a priority</p>
+            <div class="urgency-banner">⚠️ Don't Let Her Waste Another Day of Your Life</div>
+        </div>
+    </header>
+
+    <!-- Signs Section -->
+    <section class="signs-section">
+        <div class="container">
+            <h2 class="section-title fade-in">The 5 Warning Signs</h2>
+            
+            <div class="signs-grid">
+                <div class="sign-card fade-in">
+                    <div class="sign-number">1</div>
+                    <h3 class="sign-title">She Only Texts When She Needs Something</h3>
+                    <p class="sign-description">Attention, validation, or favors - never just to talk. You're her emotional ATM, not her romantic interest.</p>
+                    <div class="sign-examples">
+                        <h4>What This Looks Like:</h4>
+                        <p>"Hey, can you help me move?" "I'm having drama with my friends..." "Can you pick me up?" But radio silence when she doesn't need anything.</p>
+                    </div>
+                </div>
+
+                <div class="sign-card fade-in">
+                    <div class="sign-number">2</div>
+                    <h3 class="sign-title">Makes Plans Then Cancels Last Minute Repeatedly</h3>
+                    <p class="sign-description">Your time doesn't matter to her. She treats your schedule like it's completely flexible and disposable.</p>
+                    <div class="sign-examples">
+                        <h4>What This Looks Like:</h4>
+                        <p>"Something came up..." "I'm not feeling well..." "My friend needs me..." Always an excuse, never accountability for wasting your time.</p>
+                    </div>
+                </div>
+
+                <div class="sign-card fade-in">
+                    <div class="sign-number">3</div>
+                    <h3 class="sign-title">Keeps You Guessing About Where You Stand</h3>
+                    <p class="sign-description">Intentionally vague about her feelings. She wants the benefits of your attention without giving you clarity or commitment.</p>
+                    <div class="sign-examples">
+                        <h4>What This Looks Like:</h4>
+                        <p>"I'm not ready for anything serious..." "Let's just see what happens..." "I don't want to label things..." Keeping you on the hook indefinitely.</p>
+                    </div>
+                </div>
+
+                <div class="sign-card fade-in">
+                    <div class="sign-number">4</div>
+                    <h3 class="sign-title">Mentions Other Guys to Make You Jealous</h3>
+                    <p class="sign-description">Uses competition to keep you hooked. She wants you to fight for her attention while she explores other options.</p>
+                    <div class="sign-examples">
+                        <h4>What This Looks Like:</h4>
+                        <p>"This guy at work is so funny..." "My ex texted me..." "I'm going out with friends (that includes guys)..." Constantly reminding you that you're not her only option.</p>
+                    </div>
+                </div>
+
+                <div class="sign-card fade-in">
+                    <div class="sign-number">5</div>
+                    <h3 class="sign-title">Hot and Cold Behavior That Never Stabilizes</h3>
+                    <p class="sign-description">Intense one day, distant the next. This emotional rollercoaster keeps you addicted to the highs while accepting the lows.</p>
+                    <div class="sign-examples">
+                        <h4>What This Looks Like:</h4>
+                        <p>Amazing date followed by days of silence. Deep conversations then treating you like a stranger. Making you feel special, then making you feel invisible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reality Check Section -->
+    <section class="reality-section">
+        <div class="container">
+            <h2 class="reality-text fade-in">Stop Making Excuses for Her Behavior</h2>
+            <p class="reality-subtext fade-in">If she wanted to, she would.</p>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="signs-section">
+        <div class="container">
+            <div class="testimonial-section fade-in">
+                <p class="testimonial-text">"I wasted 2 years on a girl who was clearly playing games. This guide opened my eyes to the patterns I was ignoring. Now I can spot the red flags immediately and protect my energy."</p>
+                <p class="testimonial-author">- Marcus T., Age 28</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Get The Complete "Stop Getting Played" Blueprint</h2>
+                <p class="cta-subtitle">Protect your time, energy, and self-respect with the complete system that teaches you to recognize manipulation and demand the respect you deserve</p>
+                
+                <div class="value-props">
+                    <div class="value-prop">
+                        <h3>🛡️ Complete Protection System</h3>
+                        <p>Learn all 15 manipulation tactics women use and how to spot them instantly</p>
+                    </div>
+                    <div class="value-prop">
+                        <h3>⚡ Time & Energy Saving</h3>
+                        <p>Never waste months on women who aren't serious about you</p>
+                    </div>
+                    <div class="value-prop">
+                        <h3>💪 Self-Respect Framework</h3>
+                        <p>Build unshakeable boundaries that attract quality women</p>
+                    </div>
+                </div>
+                
+                <div class="price-section">
+                    <span class="original-price">$67</span>
+                    <div class="current-price">$19</div>
+                    <p class="price-note">Limited Time - 72% Off Regular Price</p>
+                </div>
+                
+                <a href="https://buy.stripe.com/8x2aEQ1DM3iG72a8J06Vq09" class="cta-button" target="_blank">Get Instant Access</a>
+                
+                <div class="guarantee">
+                    <h4>🔒 30-Day Money Back Guarantee</h4>
+                    <p>If this blueprint doesn't save you from wasting time on the wrong women, get your money back. No questions asked.</p>
+                </div>
+                
+                <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
+                    ✓ Instant Digital Download<br>
+                    ✓ Works on Phone, Tablet & Computer<br>
+                    ✓ Complete Manipulation Detection System<br>
+                    ✓ Lifetime Access & Updates
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add hover effects to sign cards
+        document.querySelectorAll('.sign-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add click tracking for CTA button
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            // Add analytics tracking here if needed
+            console.log('CTA clicked - redirect to purchase');
+        });
+
+        // Add urgency timer effect
+        setInterval(() => {
+            const banner = document.querySelector('.urgency-banner');
+            banner.style.animation = 'none';
+            banner.offsetHeight; // Trigger reflow
+            banner.style.animation = 'pulse-glow 2s ease-in-out infinite';
+        }, 5000);
+
+        // Smooth scrolling for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
